@@ -29,6 +29,11 @@ const [action,setAction] = useState("Login");
                     <img src={password_icon} alt=""/>
                     <input type="password" placeholder="Password"/>
                 </div>
+                {action==="Login"?<div></div>: <div className="input">
+                    <img src={password_icon} alt=""/>
+                    <input type="confirm password" placeholder="Confirm Password"/>
+                </div>}
+               
             </div> 
             {action==="Sign Up"?<div></div>: <div className="forgot-password">Lost Password? <span>Click Here!</span></div>}
            
